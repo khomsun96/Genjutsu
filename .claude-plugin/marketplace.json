@@ -1,0 +1,20 @@
+{
+  "name": "genjutsu",
+  "owner": {
+    "name": "khomsun96"
+  },
+  "metadata": {
+    "description": "Marketplace for the genjutsu plugin",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "genjutsu",
+      "source": "./plugins/genjutsu",
+      "description": "Illusions for your codebase: mock APIs, realistic fixtures, test stubs, and a sweep that dispels leftover fakes before you ship.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": ["mocks", "fixtures", "stubs", "testing"]
+    }
+  ]
+}

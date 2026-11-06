@@ -1,0 +1,12 @@
+{
+  "name": "genjutsu",
+  "version": "0.1.0",
+  "description": "Illusions for your codebase: mock APIs, realistic fixtures, test stubs, and a sweep that dispels leftover fakes before you ship.",
+  "author": {
+    "name": "khomsun96"
+  },
+  "homepage": "https://github.com/khomsun96/Genjutsu",
+  "repository": "https://github.com/khomsun96/Genjutsu",
+  "license": "MIT",
+  "keywords": ["mocks", "fixtures", "stubs", "testing"]
+}
