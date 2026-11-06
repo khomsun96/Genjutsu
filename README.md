@@ -18,9 +18,12 @@ Then restart Claude Code (or run `/reload-plugins`) so the commands load.
 | Command | `/genjutsu:mock-api <spec or description>` | Builds a runnable mock server using the project's own stack |
 | Command | `/genjutsu:fixtures <model> [count]` | Generates realistic, constraint-respecting fixture or seed data |
 | Command | `/genjutsu:stub <dependency>` | Creates a configurable test double and one example test |
+| Command | `/genjutsu:record <HAR or saved responses>` | Turns real captured responses into sanitized fixtures and mock handlers |
+| Command | `/genjutsu:scenario <name>` | Adds switchable scenarios (empty, error, slow, flaky...) to existing mocks |
 | Command | `/genjutsu:dispel [path]` | Read-only sweep for mocks and fake data reachable in production |
 | Agent | `illusionist` | Read-only specialist used by `dispel` |
 | Skill | `mock-data` | Rules for fake data that looks real but is safe |
+| Skill | `sanitize` | Rules for scrubbing real captured data into safe mocks |
 
 Everything genjutsu generates is tagged `genjutsu:mock`, which is how `dispel` tells intended mocks from leaks.
 
@@ -33,7 +36,9 @@ genjutsu/
     ├── .claude-plugin/plugin.json      # plugin manifest
     ├── commands/                       # slash commands
     ├── agents/illusionist.md
-    └── skills/mock-data/SKILL.md
+    └── skills/
+        ├── mock-data/SKILL.md
+        └── sanitize/SKILL.md
 ```
 
 ## Developing
